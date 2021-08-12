@@ -2,7 +2,7 @@ package com.tinyiko;
 
 import java.util.*;
 
-public class Store {
+public class HashMapExample {
 
     protected static Map<String,ContactDetails> name = new HashMap<>();
     protected static Map<String,ContactDetails> phoneNumber = new HashMap<>();
