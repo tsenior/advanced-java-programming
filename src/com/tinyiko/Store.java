@@ -14,7 +14,6 @@ public class Store {
         retrievePhoneNumbersFromNameMapUsingNameAsKey();
         retrieveNamesFromPhoneNumberMapUsingPhoneNumberAsKey();
         removeNameUsingKey();
-
         clearHashMaps();
 
     }
