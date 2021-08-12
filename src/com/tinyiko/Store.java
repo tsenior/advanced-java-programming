@@ -15,13 +15,9 @@ public class Store {
         retrieveNamesFromPhoneNumberMapUsingPhoneNumberAsKey();
         removeNameUsingKey();
 
-        name.clear();
-        phoneNumber.clear();
-
-        System.out.println("Names cleared =>"+ name + " phone numbers cleared =>"+phoneNumber);
+        clearHashMaps();
 
     }
-
 
     private static List<ContactDetails> buildContactDetailsObject() {
 
@@ -76,6 +72,13 @@ public class Store {
         }
         System.out.println("After removing Aya i should not get contact of aya 444");
         retrievePhoneNumbersFromNameMapUsingNameAsKey();
+    }
+
+    private static void clearHashMaps() {
+        name.clear();
+        phoneNumber.clear();
+
+        System.out.println("Names cleared =>"+ name + " phone numbers cleared =>"+phoneNumber);
     }
 
 }
