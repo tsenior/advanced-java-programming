@@ -66,7 +66,7 @@ public class HashMapExample {
         if (name.containsKey("Aya")){
             name.remove("Aya");
         }
-        System.out.println("After removing Aya i should not get contact of aya 444");
+        System.out.println("After removing Aya i shouldn't get contact of aya 444");
         retrievePhoneNumbersFromNameMapUsingNameAsKey();
     }
 
