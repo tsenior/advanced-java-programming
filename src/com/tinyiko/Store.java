@@ -4,8 +4,8 @@ import java.util.*;
 
 public class Store {
 
-    public static Map<String,ContactDetails> name = new HashMap<>();
-    public static Map<String,ContactDetails> phoneNumber = new HashMap<>();
+    protected static Map<String,ContactDetails> name = new HashMap<>();
+    protected static Map<String,ContactDetails> phoneNumber = new HashMap<>();
 
     public static void main(String[] args) {
 
@@ -14,6 +14,11 @@ public class Store {
         retrievePhoneNumbersFromNameMapUsingNameAsKey();
         retrieveNamesFromPhoneNumberMapUsingPhoneNumberAsKey();
         removeNameUsingKey();
+
+        name.clear();
+        phoneNumber.clear();
+
+        System.out.println("Names cleared =>"+ name + " phone numbers cleared =>"+phoneNumber);
 
     }
 
